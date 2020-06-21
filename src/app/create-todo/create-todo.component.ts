@@ -20,9 +20,8 @@ export class CreateTodoComponent implements OnInit {
       description: '',
       createdAt: new Date(),
     });
-    
     // resets our todoTitle variable to an empty string
-    //this.todoTitle = '';
+    //  this.todoTitle = '';
   }
 
 }
