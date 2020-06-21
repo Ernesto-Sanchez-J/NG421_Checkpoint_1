@@ -8,6 +8,7 @@ import { CreateTodoComponent } from './create-todo/create-todo.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { ConfirmationModalComponent } from './confirmation-modal/confirmation-modal.component';
 import {RouterModule } from '@angular/router';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 const routes = [];
 const appRoutes = RouterModule.forRoot(routes);
@@ -24,7 +25,8 @@ const appRoutes = RouterModule.forRoot(routes);
     BrowserModule,
     appRoutes,
     FormsModule,
-    NgbModule
+    NgbModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
