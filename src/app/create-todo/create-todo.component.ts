@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {TodoService} from '../services/todo.service';
+import { TodoService} from '../services/todo.service';
+import { ITodo } from '../interfaces/itodo';
 
 @Component({
   selector: 'app-create-todo',
@@ -7,18 +8,21 @@ import {TodoService} from '../services/todo.service';
   styleUrls: ['./create-todo.component.css']
 })
 export class CreateTodoComponent implements OnInit {
-  todoTitle = ''
-  constructor(private todoService : TodoService) { }
+  todoTitle = '';
+  constructor(private todoService: TodoService) { }
 
-  ngOnInit() {
-  }
-  addTodo():void {
+  ngOnInit() {}
+
+  addTodo(): void {
     this.todoService.addTodo({
-      title: this.todoTitle
+      title: this.todoTitle,
+      status: 'Todo',
+      description: '',
+      createdAt: new Date(),
     });
     
     // resets our todoTitle variable to an empty string
-    this.todoTitle = '';
+    //this.todoTitle = '';
   }
 
 }
