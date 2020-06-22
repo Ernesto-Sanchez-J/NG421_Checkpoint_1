@@ -17,6 +17,7 @@ import { TodoTableComponent } from './todo-table/todo-table.component';
 import { BoardComponent } from './board/board.component';
 import { TodoEditComponent } from './todo-edit/todo-edit.component';
 import { TodotableComponent } from './todotable/todotable/todotable.component';
+import { TodoeditComponent } from './todoedit/todoedit.component';
 
 const routes = [{path: 'table', component: TodoTableComponent},
                 {path: 'board', component: BoardComponent},
@@ -34,6 +35,7 @@ const appRoutes = RouterModule.forRoot(routes);
     TodoEditComponent,
     TodoTableComponent,
     TodotableComponent,
+    TodoeditComponent,
   ],
   imports: [
     BrowserModule,
