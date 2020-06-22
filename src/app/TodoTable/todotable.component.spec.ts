@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { MatTableModule } from '@angular/material';
-import { TodoTableComponent } from './todo-table.component';
+import { TodoTableComponent } from './todotable.component';
 
 describe('TodoTableComponent', () => {
   let component: TodoTableComponent;
