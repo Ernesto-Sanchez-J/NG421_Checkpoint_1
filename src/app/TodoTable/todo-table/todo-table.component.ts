@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import {ITodo} from '../interfaces/itodo';
+import { ITodo } from '../interfaces/itodo';
 import { TodoService } from '../services/todo.service';
 import { MatTableDataSource} from '@angular/material/table';
 import {MatSort} from '@angular/material/sort';
