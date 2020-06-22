@@ -7,15 +7,15 @@ import {MatSort} from '@angular/material/sort';
 
 @Component({
   selector: 'app-todo-table',
-  templateUrl: './todo-table.component.html',
-  styleUrls: ['./todo-table.component.css'],
+  templateUrl: './todotable.component.html',
+  styleUrls: ['./todotable.component.css'],
 })
 export class TodoTableComponent implements OnInit {
 
   dataSource: MatTableDataSource<ITodo>;
 
   get todoList(): ITodo[] {
-    return this.todoService.getTodos();
+    return this.todoService.getTodos(status);
   }
 
   @ViewChild(MatSort, {static: true}) sort: MatSort;
